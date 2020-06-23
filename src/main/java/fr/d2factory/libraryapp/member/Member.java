@@ -13,6 +13,10 @@ public abstract class Member {
     private float wallet;
 
     /**
+     * if a member has borrowed a book
+     */
+    private boolean hasAbook;
+    /**
      * The member should pay their books when they are returned to the library
      *
      * @param numberOfDays the number of days they kept the book
@@ -26,4 +30,14 @@ public abstract class Member {
     public void setWallet(float wallet) {
         this.wallet = wallet;
     }
+
+	public boolean isHasAbook() {
+		return hasAbook;
+	}
+
+	public void setHasAbook(boolean hasAbook) {
+		this.hasAbook = hasAbook;
+	}
+    
+    
 }
